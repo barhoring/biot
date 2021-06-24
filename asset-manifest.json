@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/barhoring/biot/static/css/main.114a3ccf.chunk.css",
+    "main.js": "/barhoring/biot/static/js/main.7278da1e.chunk.js",
+    "main.js.map": "/barhoring/biot/static/js/main.7278da1e.chunk.js.map",
+    "runtime-main.js": "/barhoring/biot/static/js/runtime-main.2b55f715.js",
+    "runtime-main.js.map": "/barhoring/biot/static/js/runtime-main.2b55f715.js.map",
+    "static/js/2.f2597739.chunk.js": "/barhoring/biot/static/js/2.f2597739.chunk.js",
+    "static/js/2.f2597739.chunk.js.map": "/barhoring/biot/static/js/2.f2597739.chunk.js.map",
+    "static/js/3.4e2518a1.chunk.js": "/barhoring/biot/static/js/3.4e2518a1.chunk.js",
+    "static/js/3.4e2518a1.chunk.js.map": "/barhoring/biot/static/js/3.4e2518a1.chunk.js.map",
+    "index.html": "/barhoring/biot/index.html",
+    "static/css/main.114a3ccf.chunk.css.map": "/barhoring/biot/static/css/main.114a3ccf.chunk.css.map",
+    "static/js/2.f2597739.chunk.js.LICENSE.txt": "/barhoring/biot/static/js/2.f2597739.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b55f715.js",
+    "static/js/2.f2597739.chunk.js",
+    "static/css/main.114a3ccf.chunk.css",
+    "static/js/main.7278da1e.chunk.js"
+  ]
+}
