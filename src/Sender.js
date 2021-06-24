@@ -3,6 +3,10 @@ import Util from "./Util";
 
 const Sender = () => {
   const [text, setText] = useState("");
+  const [lastMessageId, setLastMessageId] = useState(null);
+  /* Init with true. Asume all messages never written were read */
+  const [isLastMessageRead, setIsLastMessageRead] = useState(true);
+
   return (
     <div className="sender">
       <h1>Welcome</h1>
@@ -20,12 +24,20 @@ const Sender = () => {
         type="submit"
         value="Submit"
         onClick={() => {
-          Util.addMessage(text);
+          Util.addMessage(text, setLastMessageId, setIsLastMessageRead);
+
+          // prepare for next message to be written
+          setIsLastMessageRead(false);
           setText("");
         }}
       >
         Submit
       </button>
+      {!isLastMessageRead && (
+        <button onClick={() => Util.deleteMessage(lastMessageId)}>
+          Delete last message: {lastMessageId}
+        </button>
+      )}
     </div>
   );
 };

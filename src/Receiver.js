@@ -4,7 +4,6 @@ import Loader from "./Loader";
 
 const Message = ({ creationTime, text, id }) => {
   if (!creationTime) return null;
-  debugger;
   return (
     <div>
       <div style={{ fontSize: "0.5rem" }}>
@@ -30,8 +29,9 @@ const Receiver = () => {
     }
     setIsWaiting(true);
     setMessage("");
-    const msg = await Util.getNextMessage();
+    const { message: msg, setIsLastMessageRead } = await Util.getNextMessage();
     setMessage(msg);
+    setIsLastMessageRead(true);
     setIsWaiting(false);
   };
 
